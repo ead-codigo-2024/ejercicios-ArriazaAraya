@@ -1,0 +1,78 @@
+.container { /* CONTENEDOR GENERAL */
+    position: relative;
+    max-width: 900px;
+    margin-inline: auto;
+    font-family: Helvetica;
+  }
+  .container_header { /* CONTENEDOR ENCABEZADO */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .container_header h3 { /* TE CONTAMOS */
+    margin-inline-end: auto;
+    font-size: 23px;
+    margin-left: 1;
+  }
+  .container_rectangulo { 
+    background: #f2d800;      
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    left: 160px;
+  }
+  .container_header a{ /* VER TODAS LAS NOTICIAS */
+    font-size: 12px;
+  }
+  .container_body { /* CONTENIDO DIVIDIDO EN 3 COLUMNAS */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+  }
+  img, /* IMÁGENES */
+  video {
+    max-width: 100%;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 800px) { /* IMÁGENES */
+    .container_body {
+      grid-template-columns: unset;
+    }
+  }
+  .access { /* DISPOSICIÓN RECTÁNGULOS BLANCOS*/
+    position: relative;
+  }
+  .access__content { /* RECTÁNGULOS BLANCOS */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0.3rem;
+  }
+  .access__tag { /* ETIQUETAS AZULES */
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    right: auto;
+    padding: 4px;
+    background-color: #367ff6;
+    color: white;
+    border-radius: 0.3rem;
+    font-size: 12px;
+  }
+  .access__epigraph { /* SUBTÍTULO RECTÁNGULO BLANCO */
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .access__title { /* ENUNCIADOS RECTÁNGULOS BLANCOS */
+    font-size: 15px; 
+  }
+  .access_rectangulo {
+    background: #367ff6;     
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    left: 16px; 
+  }
